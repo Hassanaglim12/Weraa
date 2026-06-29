@@ -7,16 +7,21 @@ plugins {
   alias(libs.plugins.roborazzi)
   alias(libs.plugins.secrets)
   alias(libs.plugins.google.services)
+  alias(libs.plugins.kotlin.android) apply false
+}
+
+if (org.gradle.util.GradleVersion.current() < org.gradle.util.GradleVersion.version("9.0")) {
+  apply(plugin = "org.jetbrains.kotlin.android")
 }
 
 android {
   namespace = "com.example"
-  compileSdk = 34
+  compileSdk = 36
 
   defaultConfig {
     applicationId = "com.aistudio.wareracompanion.qykszn"
     minSdk = 24
-    targetSdk = 34
+    targetSdk = 36
     versionCode = 1
     versionName = "1.0"
 
