@@ -1,0 +1,6 @@
+{
+  "name": "WarEra Companion",
+  "description": "Sleek tactical companion app for the WarEra MMORPG featuring dynamic resource market tracking, Gemini-powered AI Advisor, and secure user profile setups.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
